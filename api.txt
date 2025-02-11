@@ -1,0 +1,103 @@
+It looks like you're looking for API endpoint URLs based on your Laravel routes. Here are some key API endpoints extracted from your api.php file:
+
+------------------ Auth Endpoints --------
+POST /api/v1/auth/register
+POST /api/v1/auth/login
+GET /api/v1/auth/logout
+POST /api/v1/auth/check-phone
+POST /api/v1/auth/resend-otp-check-phone
+POST /api/v1/auth/verify-phone
+POST /api/v1/auth/check-email
+POST /api/v1/auth/resend-otp-check-email
+POST /api/v1/auth/verify-email
+POST /api/v1/auth/forgot-password
+POST /api/v1/auth/verify-otp
+PUT /api/v1/auth/reset-password
+POST /api/v1/auth/social-login
+POST /api/v1/auth/update-phone
+------------ Configuration ------------
+GET /api/v1/config
+Shipping Method
+GET /api/v1/shipping-method/detail/{id}
+GET /api/v1/shipping-method/by-seller/{id}/{seller_is}
+POST /api/v1/shipping-method/choose-for-order
+GET /api/v1/shipping-method/chosen
+GET /api/v1/shipping-method/check-shipping-type
+-------------- Cart --------------
+GET /api/v1/cart
+POST /api/v1/cart/add
+PUT /api/v1/cart/update
+DELETE /api/v1/cart/remove
+DELETE /api/v1/cart/remove-all
+------------Orders----------
+GET /api/v1/customer/order/get-order-by-id
+GET /api/v1/customer/order/details
+POST /api/v1/customer/order/place
+GET /api/v1/customer/order/list
+POST /api/v1/customer/order/again
+----------------- Products ------------
+GET /api/v1/products/latest
+GET /api/v1/products/featured
+GET /api/v1/products/top-rated
+POST /api/v1/products/filter
+GET /api/v1/products/details/{slug}
+GET /api/v1/products/reviews/{product_id}
+POST /api/v1/products/reviews/submit
+GET /api/v1/products/rating/{product_id}
+GET /api/v1/products/best-sellings
+GET /api/v1/products/most-demanded-product
+------------ Categories --------------
+GET /api/v1/categories
+GET /api/v1/categories/products/{category_id}
+GET /api/v1/categories/find-what-you-need
+--------------- Brands ------------
+GET /api/v1/brands
+GET /api/v1/brands/products/{brand_id}
+---------Customers----------
+GET /api/v1/customer/info
+PUT /api/v1/customer/update-profile
+GET /api/v1/customer/account-delete/{id}
+POST /api/v1/customer/address/add
+GET /api/v1/customer/address/list
+DELETE /api/v1/customer/address
+GET /api/v1/customer/wish-list
+POST /api/v1/customer/wish-list/add
+DELETE /api/v1/customer/wish-list/remove
+Chat
+GET /api/v1/customer/chat/list/{type}
+admin@gmail.com
+admin@gmail.com
+{
+  "email": "user@gmail.com",
+  "password": "12345678",
+  "guest_id": "1"
+}
+
+-updarte
+{
+  "f_name": "joy",
+  "l_name": "user",
+  "email": "joy1@gmail.com",
+  "phone": "33474567867",
+  "password": "12345678"
+
+}
+------------ 
+const categories = [
+  {
+    title: 'Girl Collection',
+    subcategories: ['Subcategory 1', 'Subcategory 2', 'Subcategory 3'],
+  },
+  {
+    title: 'Boys Collection',
+    subcategories: ['Subcategory 1', 'Subcategory 2', 'Subcategory 3'],
+  },
+  {
+    title: 'Baby Collection',
+    subcategories: ['Subcategory 1', 'Subcategory 2', 'Subcategory 3'],
+  },
+  {
+    title: 'Accessories Collection',
+    subcategories: ['Subcategory 1', 'Subcategory 2', 'Subcategory 3'],
+  },
+];
