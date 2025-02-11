@@ -15,8 +15,9 @@ import Bandtest from "./pages/Bandproduct/Bandtest";
 // import LatestProduct from "./pages/Latestproduct/Latestproduct";
 import { Latesttest } from "./pages/Latestproduct/Latesttest";
 import Testcategories from "./pages/Featurecategories/Testcategories";
+import Bands from "./(bandproduct)/bands/page";
 // import Bands from "./(bandproduct)/bands/page";
-import Bands from "./pages/bands/page";
+
 // import FurnitureCard from "./pages/Newoffer/FurnituredCard";
 
 
